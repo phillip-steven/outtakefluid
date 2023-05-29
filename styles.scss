@@ -43,12 +43,16 @@ body {
     }
     input {
       width: 30%;
+      display: inline;
     }
     label {
       width: 60%;
     }
-    input {
-      display: inline;
+    #todayDate,
+    #outTake {
+      background-color: $container-color;
+      color: white;
+      border: none;
     }
     button {
       font-weight: 700;

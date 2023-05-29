@@ -41,12 +41,16 @@ body main.container i {
 }
 body main.container input {
   width: 30%;
+  display: inline;
 }
 body main.container label {
   width: 60%;
 }
-body main.container input {
-  display: inline;
+body main.container #todayDate,
+body main.container #outTake {
+  background-color: #13293d;
+  color: white;
+  border: none;
 }
 body main.container button {
   font-weight: 700;
