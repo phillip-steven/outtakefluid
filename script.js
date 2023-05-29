@@ -1,22 +1,21 @@
 // Start of define date
-const a = new Date();
+const date = new Date();
 document.getElementById(
   "todayDate"
-).innerHTML = `${a.getDate()} /${a.getMonth()} / ${a.getFullYear()}`;
+).innerHTML = `${date.getDate()} /${date.getMonth()} / ${date.getFullYear()}`;
 // End of define date
 
-function calculateOuttake(constWeight, magicNumber, todayWeight) {
+function calculateOuttake(constWeight, todayWeight, magicNumber) {
   return parseInt(todayWeight * 1000 - constWeight * 1000 + magicNumber);
 }
 
 function submitOuttake() {
-  const cWeight = document.getElementById("constantWeight").value;
-  const tWeight = document.getElementById("todayWeight").value;
-  return (document.getElementById(
-    "outTake"
-  ).innerHTML = `Cairan yang harus ditarik: ${calculateOuttake(
+  const cWeight = Number(document.getElementById("constantWeight").value);
+  const tWeight = Number(document.getElementById("todayWeight").value);
+  const mNumber = Number(document.getElementById("magicNumber").value);
+  return (document.getElementById("outTake").innerText = ` ${calculateOuttake(
     cWeight,
-    700,
-    tWeight
+    tWeight,
+    mNumber
   )}`);
 }

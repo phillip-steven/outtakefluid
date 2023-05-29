@@ -26,8 +26,8 @@
           <img src="./src/svg/person-circle.svg" alt="" />
         </div>
         <div class="profile-detail">
-          <h2>Juniati Siagian</h2>
-          <h3>28/06/1972</h3>
+          <h2>Pasien HD Siloam</h2>
+          <h3>DD/MM/YYYY</h3>
         </div>
       </section>
       <section class="outtakeFluid">
@@ -37,16 +37,30 @@
         </div>
         <div class="block">
           <label for="constantWeight">Berat kering </label>
-          <input type="number" id="constantWeight" />
+          <input type="number" id="constantWeight" pattern="\d*/" />
         </div>
         <div class="block">
           <label for="todayWeight">Berat badan sekarang </label>
-          <input type="number" id="todayWeight" />
+          <input type="number" id="todayWeight" pattern="\d*/" />
+        </div>
+        <div class="block">
+          <label for="magicNumber">Penambahan akhir </label>
+          <input
+            type="number"
+            id="magicNumber"
+            min="400"
+            max="700"
+            step="100"
+            pattern="\d*/"
+          />
         </div>
         <button onclick="submitOuttake()">
           Hitung cairan yang harus ditarik
         </button>
-        <p id="outTake"></p>
+        <div class="block">
+          <label for="todayWeight">Cairan yang harus ditarik </label>
+          <p id="outTake"></p>
+        </div>
       </section>
     </main>
   </body>
