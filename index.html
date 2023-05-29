@@ -37,11 +37,11 @@
         </div>
         <div class="block">
           <label for="constantWeight">Berat kering </label>
-          <input type="number" id="constantWeight" inputmode="numeric" />
+          <input type="decimal" id="constantWeight" />
         </div>
         <div class="block">
           <label for="todayWeight">Berat badan sekarang </label>
-          <input type="decimal" id="todayWeight" inputmode="numeric" />
+          <input type="decimal" id="todayWeight" />
         </div>
         <div class="block">
           <label for="decimal">Penambahan akhir </label>
@@ -51,7 +51,6 @@
             min="400"
             max="700"
             step="100"
-            inputmode="numeric"
           />
         </div>
         <button onclick="submitOuttake()">
