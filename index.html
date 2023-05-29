@@ -37,11 +37,21 @@
         </div>
         <div class="block">
           <label for="constantWeight">Berat kering </label>
-          <input type="number" id="constantWeight" pattern="\d*/" />
+          <input
+            type="number"
+            id="constantWeight"
+            inputmode="numeric"
+            pattern="[0-9]*"
+          />
         </div>
         <div class="block">
           <label for="todayWeight">Berat badan sekarang </label>
-          <input type="number" id="todayWeight" pattern="\d*/" />
+          <input
+            type="number"
+            id="todayWeight"
+            inputmode="numeric"
+            pattern="[0-9]*"
+          />
         </div>
         <div class="block">
           <label for="magicNumber">Penambahan akhir </label>
@@ -51,7 +61,8 @@
             min="400"
             max="700"
             step="100"
-            pattern="\d*/"
+            inputmode="numeric"
+            pattern="[0-9]*"
           />
         </div>
         <button onclick="submitOuttake()">
